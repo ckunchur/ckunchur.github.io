@@ -12,7 +12,7 @@ export default function ProjectsPage() {
 
   const featured = allProjects.find((project) => project.slug === "ecovision")!;
   const top2 = allProjects.find((project) => project.slug === "mindstorm")!;
-  const top3 = allProjects.find((project) => project.slug === "edusketch")!;
+  const top3 = allProjects.find((project) => project.slug === "apple-news")!;
 
   const filteredProjects = allProjects
     .filter((p) => p.published)
