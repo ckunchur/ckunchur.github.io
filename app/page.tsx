@@ -109,7 +109,7 @@ export default function Home() {
           </Card>
         </div>
 
-        <p className="fixed bottom-4 right-4 text-xs text-zinc-600">
+        <p className="bottom-4 right-4 text-xs text-zinc-600">
           Built with{' '}
           <a href="https://nextjs.org/" className="underline">
             Next.js
