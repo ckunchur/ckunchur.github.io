@@ -6,7 +6,8 @@
     "dev": "contentlayer dev & next dev",
     "build": "contentlayer build && next build",
     "start": "next start",
-    "fmt": "pnpm rome check . --apply-unsafe && pnpm rome format . --write"
+    "fmt": "pnpm rome check . --apply-unsafe && pnpm rome format . --write",
+    "deploy": "next build && touch out/.nojekyll && git add -f out/ && git commit -m \"Deploy to gh-pages\" && git push origin `git subtree split --prefix out main`:gh-pages --force"
   },
   "dependencies": {
     "@next/mdx": "^14.1.0",
