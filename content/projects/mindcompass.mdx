@@ -1,0 +1,99 @@
+---
+title: MindCompass
+description: A mixed reality app designed to help kids practice immersive, guided meditation. 
+date: "2023-04-01"
+displayDate: Fall 2023
+url: https://hci.stanford.edu/courses/cs147/2023/au/projects/AccessingHealthcare/MindCompass/
+published: true
+category: "XR"
+videoDemo: https://www.youtube.com/watch?v=Kt_2jgPzT4I
+tools:
+ - Figma
+ - Unity
+  
+---
+  <iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/Kt_2jgPzT4I"
+  title="MindCompass Final Demo"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  style={{ borderRadius: '1rem', marginBottom: '2rem' }}
+/>
+
+# Summary
+
+MindCompass is a mixed reality app designed to help kids practice immersive, guided meditation in the comfort of their own home, promoting independence and healthy emotional regulation. Users are guided by friendly creatures and transported to mystical lands, earning rewards for building good habits. This project was started as part of Stanford’s Introduction to Human Computer Interaction (CS 147) class in Fall of 2023, in which our group won the “Best Overall Project” and “Most Novel” awards for our efforts.
+
+Check out our full design process at our project [website](https://hci.stanford.edu/courses/cs147/2023/au/projects/AccessingHealthcare/MindCompass/) including needfinding, experience prototyping, annotated task flows, low-fi user testing, heuristic evaluation, our hi-fi Unity demo, and more! The entire process from start to finish is also documented in our [final report](https://docs.google.com/document/d/1Mk08d4agAaUTJZbPJzXVYzkIkdLyrchrN66KLymyBYI/edit?usp=sharing).
+
+# Needfinding + Solution Brainstorming
+Our problem scope initially focused on parenting and caretaking in general. We conducted two rounds of needfinding interviews, recruiting a total of 6 participants, all parents who spanned a range of occupations and child raising experience. 
+When interviewing participants, we focused on a few themed guiding questions. A few examples are listed below:
+ - Roadblocks: What roadblocks hamper(ed) you from performing your childcare duties to the fullest?
+ - Trust: How did you navigate different sources of advice and learn what to trust?
+ - Support: What kind of support network was available to you when raising a child?
+
+ ## Result Synthesis
+Our needfinding interviews were incredibly insightful in highlighting key areas and issues faced by parents and caretakers. For each interviewee, we generated individual empathy maps (what the interviewee says, thinks, does, and feels) and noted key quotes and insights from their interview. After repeating this process for each interviewee, we identified several overarching themes:
+ - Self-discovery: allowing for self-discovery is just as (if not more) important than outside advice during the parenting process.
+ - Support: a strong support group and network of peers can be critical for relieving stress during parenting. 
+ - No generic solutions: you can’t bundle all “childcare” together, even if kids are seemingly similar in age; each kid is different from each other. 
+ - Pressure: New parents will weigh every decision with a lot of anxiety in order to try to be perfect.
+
+## POVs & How Might Wes
+As a team, we developed POV (point of view) statements based on two of our strongest interviews and generated “How Might We” (HMW) statements to brainstorm possible pain points that could be addressed by expanded solutions.
+We brainstormed 10-15 solutions for each HMW statement. 
+
+Below is a small sample of our findings from initial needfinding interviews and our generation of potential “how might we” statements and solutions. 
+<img src="/mindcompass/mindcompass-1.png" alt="lo-fi sketch"  width="100%" />
+<img src="/mindcompass/mindcompass-2.png" alt="lo-fi sketch"  width="100%" />
+<img src="/mindcompass/mindcompass-3.png" alt="lo-fi sketch"  width="100%" />
+
+## Experience prototypes
+We next created 3 different experience prototypes, one corresponding to each of our 3 top solutions. These prototypes were designed to test assumptions we are making about our users and their behavior (not any UI or design itself). We narrowed down on assumptions that if false, would cause our idea to fail and brainstormed lightweight tests to validate those critical assumptions. 
+
+
+Below is a description of 1 of the 3 prototypes:
+
+- **Assumption**: parents need help gamifying individual parenting tasks
+- **Set up**: 1) Conversation about their general parenting experience, 2) Sketchnoting exercise - interviewees were shown an AI-generated photo of a common gamified parenting task (“Here comes the airplane!”)  
+- **Questions**: "What does this photo remind you of?", "Do you similarly gamify tasks with your child?", "What’s a hard childcare task for you? Try to gamify it."
+
+<img src="/mindcompass/experience-prototypes.png" alt="lo-fi sketch"  width="100%" />
+
+Takeaways from this prototype were:
+  - Parents lack awareness of how to gamify certain tasks  
+  - Children have more energy and imagination than their parents
+  - Parents *are* searching for answers, but don’t know what works for their child  
+  - Decreasing the cognitive stress of seeking better ways to gamify tasks empowers both the parent and child
+
+## Final Solution 
+Following our experience prototyping results and reflecting on our past interviews, we decided to narrow down on the question: How can we meet the needs of parents and kids by helping kids regulate their emotions in a way that is appealing to their childish imagination and sense of wonder?
+
+While the question may seem to differ quite a bit from our prior focus on addressing parenting needs alone, our gamification experience prototype and our previous needfinding chat with an elementary school teacher, heavily influenced our new direction. She emphasized the importance of teaching kids emotional control, especially after the COVID-19 pandemic, going out of her way to show us various materials and resources she relies on to support the students she teaches. Our focus on supporting a fundamental need of children also directly removes the emotional burden and stress placed on parents to teach such skills. By supporting young children, we also support new parents. 
+
+Thus, our final solution resulted in the following: 
+**Using gamification in mixed reality to guide children through the practice of meditation, simultaneously promoting independence and healthy emotional regulation.**
+
+## Initial Lo-fi Prototype
+
+We created a paper lo-fi prototype of our XR screens walking through selection and experience of a meditation activity. We tested this prototype on multiple participants in person, having them point to various parts of the "screens" and narrate their thinking aloud. 
+
+
+<img src="/mindcompass/mindcompass-4.png" alt="lo-fi sketch"  width="100%" />
+<img src="/mindcompass/mindcompass-5.jpeg" alt="lo-fi sketch"  width="100%" />
+
+
+# Figma Medium-Fi Prototype
+Below are a sample of the XR screens I designed in Figma including onboarding, meditation customization settings, experience completion, and rewards. 
+Check out our interactive Figma demo [here](https://www.figma.com/proto/KpWBUwZBQ54ysAo6pPKiqA/MindCompass-Med-fi-Prototype?type=design&node-id=102-9885&t=Jgl4SeAPzJmJYQNc-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=102%3A9885&show-proto-sidebar=1). Note that some aspects of the designs below were updated after Figma prototyping and were incorporated later in the actual hi-fi demo (below).
+<img src="/mindcompass/mindcompass-6.png" alt="lo-fi sketch"  width="100%" />
+
+
+# Unity Hi-Fi Demo Video
+
+Our final application was developed in Unity for the Meta Quest 3. We used a Figma to Unity plugin to directly import the 2D walkthrough and rewards screens. We used Eleven Labs to generate the audio for the meditation narrative. Upon completing the onboarding, users are transported to a calming grassy landscape where a friendly panda named "Pando" guides them through the experience. 
+Check out the video demo [here](https://www.youtube.com/watch?v=Kt_2jgPzT4I)!

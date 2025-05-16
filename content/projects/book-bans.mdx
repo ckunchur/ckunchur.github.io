@@ -1,0 +1,33 @@
+---
+title: US Book Ban Visualization
+description: Series of data visualizations created from PEN America's book ban dataset from 2021-2022.
+date: "2023-02-01"
+displayDate: Winter 2023
+url: https://book-bans-2022.netlify.app
+published: true
+category: "Web"
+tools:
+    - d3
+
+---
+
+# Summary
+
+In Winter 2023, I worked on a group project (Stanford CS 448B) to analyze and visualize PEN America's dataset that covers all instances of book bans from July 1, 2021 through June 30, 2022. These bans have typically disproportionately affected people of underrepresented communities such as the LGBTQ+ community and people of color, but there have not been many extensive visualizations that shed light on the significant impact of book bans in more detail.
+
+All visualizations seen below can be interacted with live at this [site](https://book-bans-2022.netlify.app). 
+# Timeline of Book Bans by State (July 2021 - June 2022)
+ The visualization below is an interactive timeline of the past several months that show the top 10 states with the highest number of bans. You can click the "Play" button to animate the changes from month to month, or you can click on any of the months on the slider manually. You can also switch between the bar graph from showing the number of bans occurring in each individual month (i.e. non-cumulative) or the cumulative number of bans from July 2021. 
+<img src="/bans/bans-1.png" alt="screenshot of interactive timeline showing book bans in top 10 states between 2021 to 2022" style={{ borderRadius: '1rem', margin: '2rem 0' }} />
+
+# Where do book bans in the US occur the most?
+The visualization below is an interactive chloropleth map of the U.S. with gray mapping to zero bans and dark red mapping to the highest number of bans. You can hover over a state to see its total number of bans initiated and its number of unique districts that initiated a ban. If you click on a state, you can see a bar chart mapping the name of each banning district to the number of bans initiated by that district.
+<img src="/bans/bans-2.png" alt="screenshot showing chloropleth map of US based on number of banned books" style={{ borderRadius: '1rem', margin: '2rem 0' }} />
+
+# What kinds of books are being targeted?
+## Titles of the Most Banned Books
+Below are the titles of the most banned books, ordered from most frequently banned to least. Clicking on a title will show the districts and states in which it is banned. You can also search for any title or author you are interested in seeing whether it has been banned or not.
+<img src="/bans/bans-3.png" alt="screenshot of visualization showing rankings of banned books" style={{ borderRadius: '1rem', margin: '2rem 0' }} />
+## What words are shared most across titles?
+Below is a word cloud of the most commonly occurring words in the titles of the banned books. The size of the word correlates to its frequency, and clicking on a word will reveal all of the books with that word in its title. Hovering over a listed book title will show the districts in which that book is banned. 
+<img src="/bans/bans-4.png" alt="screenshot of word cloud showing banned book titles" style={{ borderRadius: '1rem', margin: '2rem 0' }} />

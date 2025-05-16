@@ -1,0 +1,58 @@
+---
+title: EduSketch
+description: A tool for automatic educational storyboard generation, aimed at teachers of 5th-8th grade students with Down Syndrome.
+github: https://github.com/ckunchur/EduSketch
+url: https://edusketch-bebb4.web.app/
+videoDemo: https://www.youtube.com/watch?v=vjSrKwjf3ZU
+figmaPrototype: https://www.figma.com/proto/dkZz3xJMVMGM15HIyJq4bA/Figma-Prototypes?page-id=&node-id=176-357&node-type=canvas&viewport=-1256%2C-414%2C0.14&t=xsLPHUoOgsrTFgHl-1&scaling=contain&content-scaling=fixed&starting-point-node-id=176%3A357
+displayDate: "Spring 2024"
+date: "2024-03-01"
+published: true
+category: "Web"
+
+tools:
+  - Figma
+  - React
+  - OpenAI
+---
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/vjSrKwjf3ZU"
+  title="EduSketch Final Demo Video"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  style={{ borderRadius: '1rem', marginBottom: '2rem' }}
+/>
+
+
+# Summary
+EduSketch is an AI tool for automatically generating educational storyboards, initially aimed at helping students with Down Syndrome in the 5th-8th grade age range, a transition point during which the school curriculum difficulty tends to rapidly increase. Visual learning tools are commonly used to help engage children with Down Syndrome, but existing tools often fail to capture complex ideas, and caregivers often find themselves creating material, a solution that is not sustainable nor accessible. EduSketch aims to offer a easy to use tool for teachers or caregivers to convert complex ideas and documentation into visually engaging and compact storyboards.
+
+EduSketch was started as a Stanford class group project for CS 377Q: Designing for Accessibility in Spring of 2024.
+
+# Features
+EduSketch allows users to upload a PDF or copy/paste text as input for storyboard generation. Customization options include selecting an art style, adjusting the reading level, and the number of panels to include in the board. The board can be viewed in slideshow and grid formats, each panel captioned by a short description. The final storyboard can be exported in PDF format for widespread sharing.
+
+# Needfinding
+We reached out to the Stanford Down Syndrome Center for help with recruitment, receiving over 20 responses expressing interest. Due to time constraints, we selected 4 participants with Down Syndrome alongside guardians to virtually interview.
+Our participants ranged in age from 17-24 years old (we were initually focused on college learning but later pivoted). Our needfinding questions were scoped to emphasize learning experiences and associated challenges.
+
+# Prototyping & User Testing
+
+During testing, we asked users to go through the storyboard creation task flow. We set the context, explaining what the tool does, and telling them in advance that the file being used for the test is from a 5th grade history book. They were guided to “upload” and view the file, customize the art style, and view their custom storyboard.
+We collected data on how long it took them to complete this task as well as how many and what type of errors they made along the way. Any questions or moments of confusion were noted.
+
+## Med-Fi Figma Prototype
+We iterated on an interactive Figma prototpe, implementing feedback from two rounds of user testing. We prototype interactions in Figma for uploading a PDF, selecting an art style, and viewing the generated storyboard in both slideshow and grid format, with hover interactions for viewing more details about each scene.
+
+<img src="/edusketch/edusketch-frames-p1.png" alt="lo-fi sketch"  width="100%" />
+<img src="/edusketch/edusketch-frames-p2.png" alt="lo-fi sketch"  width="100%" />
+<img src="/edusketch/edusketch-frames-p3.png" alt="lo-fi sketch"  width="100%" />
+
+## Hi-fi Prototype
+
+After user testing the interactive Figma prototype, we implemented our idea as a React web application. To generate the text and image pairs for each storyboard panel, we used OpenAI's GPT-4o model for condensing and chunking the extracted PDF text (or pasted text) and DALL·E 3 for image generation.
+The live app can be tested [here](https://edusketch-bebb4.web.app/).

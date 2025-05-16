@@ -1,0 +1,87 @@
+---
+title: Apple News Redesign
+description: A UI/UX redesign of Apple News, focused on improving targeted topic exploration.
+date: "2024-11-01"
+displayDate: "Fall 2024"
+published: true
+category: "Mobile"
+videoDemo: "https://drive.google.com/file/d/1Wvnj5VlVZ2ZDlpA3jY0shWCFeX1pY7S-/view?usp=sharing"
+figmaPrototype: https://www.figma.com/proto/DFMsXsl5wOAPhLMmcCURas/Apple-News-Project?page-id=362%3A11891&node-id=407-8946&p=f&viewport=-1523%2C-684%2C0.25&t=pKLwNlOnwkzkDYcr-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=372%3A5855
+tools:
+ - Figma
+---
+
+<div className="flex flex-col md:flex-row gap-12 items-start mb-8">
+  <div className="flex-1">
+    This redesign tackles Apple News's tendency to prioritize daily headlines and personalized snippets, making it hard to form a concise, multidimensional view of a single topic including broader context. This redesign groups content into discrete topics, offers tailored exploration via article recommendations sorted by topic and source type, integrates an in-app chat for follow-up questions and personalized guidance, and lets users follow unlimited topics while viewing a "coverage profile" that highlights their biases and suggests ways to diversify their perspective. 
+    This project was initiated in Stanford's CS 247A (Design for AI) class and follows the RITE method (Rapid Iterative Testing and Evaluation) and makes use of [Microsoft's [HAX toolkit](https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/) and [playbook](https://microsoft.github.io/HAXPlaybook/) for Human-AI Interaction.
+  </div>
+  <div className="md:w-2/5">
+  <iframe
+  width="100%"
+  height="400"
+  src="https://youtube.com/shorts/embed/EoSCksIJRKY"
+  title="CS 247A Apple News Figma Redesign"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  style={{ borderRadius: '1rem', marginBottom: '2rem' }}
+/>
+  </div>
+</div>
+
+## Project Progression
+
+We created a Product Requirements Doc (PRD), outlining the following: 
+- target audience
+- user needs
+- scenarios including sunny day scenarios, stress cases, possible failure states
+- relevant AI guideleines
+- required data and features
+- comparators
+- stakeholders
+
+View the whole PRD [here](https://docs.google.com/document/d/1jR4HpJoxbiMDpi2W6Q0I3YQJVLuL7wZS/edit?usp=sharing&ouid=103933716377033248565&rtpof=true&sd=true) for the full outline. 
+
+### Ideation
+We used the Crazy 8s brainstorming method to quickly sketch out ideas (8 sketches in 5 minutes).
+<div
+  style={{
+    display: 'flex',
+  
+  }}
+>
+<img src="/apple-news/crazy8-1.png" alt="lo-fi sketch" style={{ margin: '2rem 0' }} width="50%" />
+<img src="/apple-news/crazy8-2.png" alt="lo-fi sketch" style={{ margin: '2rem 0' }} width="50%" />
+</div>
+
+
+### RITE Testing Plan
+To iterate on our designs, we used the RITE testing method with incorporation of A/B testing. We ran four different stages of testing involving a total of 8 participants. During each testing phase, users were asked to use the "think aloud" approach, verbally narrating their observations and critiques.
+
+We first created lo-fi sketches that focused more directly on our final concept. Testing questions in this stage mostly focused on 
+evaluating user interest in the overall concept and understanding of the layout of our redesigned topic and chat pages.
+<div
+  style={{
+    display: 'flex',
+  
+  }}
+>
+<img src="/apple-news/lo-fi-1.jpg" alt="lo-fi sketch" style={{ margin: '2rem 0' }} width="60%" />
+<img src="/apple-news/lo-fi-2.png" alt="lo-fi sketch" style={{ margin: '2rem 0' }} width="60%" />
+</div>
+
+The second iteration involved designing grayscale interfaces with a focus on testing ease of navigation from one screen to the next. We avoid color at this stage to ensure design critiques were more focused on organization questions, rather than aesthetics.
+<img src="/apple-news/applenews-grayscale.png" alt="lo-fi sketch" width="100%" />
+
+The third iteration involved a significant pivot from our previous chat-focused designs, incorporating additional pages for displaying topics, showing a reader's coverage of an issue, diverse sources beyond traditional news outlets, and more. 
+
+<img src="/apple-news/applenews-colored.png" alt="lo-fi sketch" width="100%" />
+
+We made heavy use of Figma's components and variants feature to rapidly iterate and create multiple options for A/B testing. 
+<img src="/apple-news/applenews-components.png" alt="lo-fi sketch" width="100%" />
+
+
+The final stage focused on scoping out a functional, interactive protoype. Testing was still done at this stage to gauge improvements for the future. 
+Check out the final Figma prototype [here](https://www.figma.com/proto/DFMsXsl5wOAPhLMmcCURas/Apple-News-Project?page-id=362%3A11891&node-id=407-8946&p=f&viewport=-1523%2C-684%2C0.25&t=pKLwNlOnwkzkDYcr-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=372%3A5855).
+
