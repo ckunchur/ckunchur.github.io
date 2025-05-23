@@ -85,7 +85,7 @@ export default function Home() {
                   <h2 className="text-md text-zinc-600">
                     I'm a developer and a designer, passionate about creating
                     products that make a difference. With a B.S. in Biomedical
-                    Computation and an M.S. in Computer Science (HCI), I've
+                    Computation and an M.S. in Computer Science (HCI) from Stanford University, I've
                     worked on tools for clinicians, scientists, teachers, parents,
                     and more. I'm passionate about data visualization and building
                     products that are accessible and intuitive.
